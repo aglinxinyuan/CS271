@@ -1,12 +1,12 @@
 reward = -1
 discount = 1
-p = 0.8
+p = 0.9
 iteration = 3
-env = [[reward, reward, reward],
-       [reward, reward, 0],
+env = [[reward,  0    , reward],
+       [reward, reward, reward],
        [reward, reward, reward]]
 
-env.reverse()
+
 result = [env]
 row = len(env)
 col = len(env[0])

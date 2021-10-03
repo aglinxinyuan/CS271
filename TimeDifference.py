@@ -14,5 +14,5 @@ for t in range(len(table) - 1, 0, -1):
     table[t][0] -= table[t - 1][0]
 
 for t in range(len(table) - 1):
-    res = table[t][1] + discounting * (table[t + 1][0] + learning * table[t + 1][1] - table[t][1])
+    res = table[t][1] + learning * (table[t + 1][0] +  discounting* table[t + 1][1] - table[t][1])
     print('S' + str(t) + ": ", res)
